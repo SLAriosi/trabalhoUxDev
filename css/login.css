@@ -1,0 +1,69 @@
+/* Estilos para o formulário de login */
+.cartao-login {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.cartao-login:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 20px;
+    border-color: #0066b3; /* Azul primário */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #448fc7; /* Azul mais escuro */
+}
+
+.btn-primary {
+    background-color: #0066b3; /* Azul primário */
+    border-color: #0066b3; /* Azul primário */
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #448fc7; /* Azul mais escuro */
+    border-color: #448fc7; /* Azul mais escuro */
+}
+
+.toggle-senha {
+    cursor: pointer;
+}
+
+#requisitosSenha {
+    color: #6c757d; /* Cinza */
+    font-size: 10px;
+}
+
+#requisitosSenha ul {
+    padding-left: 20px;
+}
+
+#requisitosSenha p {
+    margin-bottom: 5px;
+}
+
+/* Estilos personalizados para a logo */
+.logo-login {
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block; /* Para centralizar horizontalmente */
+    margin: 0 auto 20px; /* Margem inferior para separação */
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3)); /* Sombra sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    transition: transform 0.3s ease;
+    border: 2px solid #0066b3; /* Azul primário */
+}
+
+.logo-login:hover {
+    transform: scale(1.05); /* Efeito de aumento suave ao passar o mouse */
+    border-color: #448fc7; /* Azul mais escuro */
+}
