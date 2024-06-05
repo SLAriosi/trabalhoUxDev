@@ -1,0 +1,103 @@
+/* Estilos para o formulário de registro */
+.register-container {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.register-container:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-cadastro .form-group {
+    margin-bottom: 20px;
+}
+
+.formulario-cadastro .input-group-text {
+    background-color: #e9ecef;
+    border-right: 0;
+}
+
+.formulario-cadastro .form-control {
+    border-radius: 20px;
+    border-color: #0066b3;
+    /* Azul primário */
+    transition: border-color 0.3s ease;
+}
+
+.formulario-cadastro .form-control:focus {
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
+
+.btn-primary {
+    background-color: #0066b3;
+    /* Azul primário */
+    border-color: #0066b3;
+    /* Azul primário */
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #448fc7;
+    /* Azul mais escuro */
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
+
+.senha-toggle {
+    cursor: pointer;
+}
+
+.invalid-feedback {
+    display: none;
+    margin-top: 5px;
+    /* Espaçamento superior */
+    font-size: 14px;
+    /* Tamanho da fonte */
+    color: #dc3545;
+    /* Vermelho */
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    /* Vermelho */
+}
+
+.h2,
+h2 {
+    font-size: 23px;
+    /* Tamanho da fonte */
+}
+
+.logo-login {
+    max-width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    /* Para centralizar horizontalmente */
+    margin: 0 auto 20px;
+    /* Margem inferior para separação */
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+    /* Sombra sutil */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 10px;
+    /* Espaçamento interno */
+    transition: transform 0.3s ease;
+    border: 2px solid #0066b3;
+    /* Azul primário */
+}
+
+.logo-login:hover {
+    transform: scale(1.05);
+    /* Efeito de aumento suave ao passar o mouse */
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
+.btn-secondary {
+    border-radius: 20px;
+}
