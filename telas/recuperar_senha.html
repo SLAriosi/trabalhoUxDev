@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../css/recuperar_senha.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <!-- Logo -->
+                <div class="text-center mb-4">
+                    <img src="../img/logo.png" alt="Logo" class="logo-login">
+                </div>
+
+                <h2 class="mb-4">Recuperação de Senha</h2>
+                <form id="recoveryForm">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail cadastrado"
+                                required>
+                            <div class="invalid-feedback">
+                                Por favor, forneça um e-mail válido.
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="submitButton">Enviar</button>
+                    <a href="login.html" class="btn btn-secondary btn-block mt-3">Voltar para o Login</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Sucesso na Recuperação de Senha -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Sucesso!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="../img/logo.png" alt="Logomodal" style="max-width: 150px;" class="mb-3">
+                    <p>Enviamos um e-mail com instruções de recuperação de senha para: <strong
+                            id="modalEmail"></strong>.</p>
+                    <p>Por favor, verifique sua caixa de entrada e a pasta de spam.</p>
+                    <p>Se você não encontrar o e-mail, aguarde alguns minutos e tente novamente.</p>
+                    <p>Caso precise de mais ajuda, entre em contato com nosso suporte.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("recoveryForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            var emailInput = document.getElementById("email");
+            if (emailInput.checkValidity()) {
+                var email = emailInput.value; // Obtém o e-mail digitado
+                document.getElementById("modalEmail").innerText = email; // Define o e-mail na mensagem de sucesso do modal
+                $('#successModal').modal('show'); // Exibe o modal de sucesso
+                emailInput.value = ""; // Limpa o campo de e-mail
+            } else {
+                emailInput.classList.add("is-invalid");
+            }
+        });
+    </script>
+
+    <!-- Scripts do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
