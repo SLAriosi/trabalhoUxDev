@@ -1,0 +1,106 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.col-md-6 {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.col-md-6:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 23px;
+    /* Tamanho da fonte */
+}
+
+.alert {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 20px;
+    border-color: #0066b3;
+    /* Azul primário */
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
+
+.btn-primary {
+    background-color: #0066b3;
+    /* Azul primário */
+    border-color: #0066b3;
+    /* Azul primário */
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #448fc7;
+    /* Azul mais escuro */
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
+
+.btn-secondary {
+    border-radius: 20px;
+}
+
+.invalid-feedback {
+    display: none;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.logo-login {
+    max-width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    /* Para centralizar horizontalmente */
+    margin: 0 auto 20px;
+    /* Margem inferior para separação */
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+    /* Sombra sutil */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    padding: 10px;
+    /* Espaçamento interno */
+    transition: transform 0.3s ease;
+    border: 2px solid #0066b3;
+    /* Azul primário */
+}
+
+.logo-login:hover {
+    transform: scale(1.05);
+    /* Efeito de aumento suave ao passar o mouse */
+    border-color: #448fc7;
+    /* Azul mais escuro */
+}
